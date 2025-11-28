@@ -14,7 +14,11 @@ const app = express()
 
 // CORS FIX (important)
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+  "http://localhost:5173",
+  "https://frontend-aumv0spg1-tomal7010s-projects.vercel.app"
+],
+
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
 
